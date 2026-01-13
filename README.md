@@ -4,7 +4,7 @@
 cd /PATH/TO/SNES_FILES 
  2. Executar o comando no PowerShell se tiver no path /mnt/{c | d}/SNES \
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser 
- 3. Ativar o venv(se não tiver o python instalado, INSTALE, junto com o venv e o pip): \
+ 3. Ativar o venv (se não tiver o python instalado, INSTALE, junto com o venv e o pip): \
 python3 -m venv .venv \
 .venv\Scripts\python.exe -m pip install --upgrade pip
  4. Instalar com pip os requirements \
@@ -40,6 +40,7 @@ Como subir as ROMs para o git,:
   git push -u origin main \
   User: user_git \
   Pass: gerar token -> https://github.com/settings/tokens
+
 
 
 
