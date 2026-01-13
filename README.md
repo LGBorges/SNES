@@ -6,11 +6,11 @@ cd /PATH/TO/SNES_FILES
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser 
  3. Ativar o venv: \
 python3 -m venv .venv \
-.\.venv\Scripts\python.exe -m pip install --upgrade pip
+.venv\Scripts\python.exe -m pip install --upgrade pip
  4. Instalar com pip os requirements \
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.venv\Scripts\python.exe -m pip install -r requirements.txt
  5. Executar o comando: \
-.\.venv\Scripts\python.exe -m PyInstaller --onefile --noconsole --disable-windowed-traceback --name SNESLauncher --icon snes_launcher.ico --collect-all PySide6 --collect-submodules PySide6 --collect-data PySide6 --add-data "Roms;Roms" --add-data "snes_bg.png;." --add-data "snes9x-x64.exe;." --add-data "snes_launcher.ico;." src\main.py
+.venv\Scripts\python.exe -m PyInstaller --onefile --noconsole --disable-windowed-traceback --name SNESLauncher --icon snes_launcher.ico --collect-all PySide6 --collect-submodules PySide6 --collect-data PySide6 --add-data "Roms;Roms" --add-data "snes_bg.png;." --add-data "snes9x-x64.exe;." --add-data "snes_launcher.ico;." src\main.py
 
 Como subir as ROMs para o git,:
 
@@ -33,3 +33,4 @@ Como subir as ROMs para o git,:
   git push -u origin main \
   User: user_git \
   Pass: gerar token -> https://github.com/settings/tokens
+
