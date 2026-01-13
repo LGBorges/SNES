@@ -14,11 +14,10 @@ def save_dir() -> str:
     return os.path.join(app_base_dir(), "Saves")
 
 def rom_root() -> str:
-    # procura primeiro no pacote (_MEIPASS\Roms\jogos), depois no dev
-    candidate_pkg = os.path.join(package_data_dir(), "Roms", "jogos")
+    candidate_pkg = os.path.join(package_data_dir(), "Roms")
     if os.path.isdir(candidate_pkg):
         return candidate_pkg
-    return os.path.join(app_base_dir(), "Roms", "jogos")
+    return os.path.join(app_base_dir(), "Roms")
 
 def emulator_packaged_path() -> str:
     p = os.path.join(package_data_dir(), "snes9x-x64.exe")
