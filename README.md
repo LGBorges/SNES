@@ -12,6 +12,13 @@ python3 -m venv .venv \
  5. Executar o comando: \
 .venv\Scripts\python.exe -m PyInstaller --onefile --noconsole --disable-windowed-traceback --name SNESLauncher --icon snes_launcher.ico --collect-all PySide6 --collect-submodules PySide6 --collect-data PySide6 --add-data "Roms;Roms" --add-data "snes_bg.png;." --add-data "snes9x-x64.exe;." --add-data "snes_launcher.ico;." src\main.py
 
+Talvez seja necessário esses comado do git lfs: 
+
+git lfs install \
+git lfs fetch --all \
+git lfs pull \
+git lfs checkout
+
 Como subir as ROMs para o git,:
 
 - Mover os arquivos internos para a pasta Roms/ \
@@ -33,4 +40,5 @@ Como subir as ROMs para o git,:
   git push -u origin main \
   User: user_git \
   Pass: gerar token -> https://github.com/settings/tokens
+
 
